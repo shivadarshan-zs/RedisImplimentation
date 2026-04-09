@@ -1,0 +1,175 @@
+2026-03-31 11:23:35 [INFO ] c.e.R.RedisImplimentationApplication - Starting RedisImplimentationApplication using Java 24.0.2 with PID 1036 (/Users/zop/Downloads/RedisImplimentation/target/classes started by zop in /Users/zop/Downloads/RedisImplimentation)
+2026-03-31 11:23:35 [DEBUG] c.e.R.RedisImplimentationApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-03-31 11:23:35 [INFO ] c.e.R.RedisImplimentationApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 11:23:35 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 11:23:35 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 11:23:35 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2026-03-31 11:23:36 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 11:23:36 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 11:23:36 [INFO ] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.RedisImplimentation.repositories.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 11:23:36 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-03-31 11:23:36 [INFO ] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 11:23:36 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-31 11:23:36 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 11:23:36 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-03-31 11:23:36 [INFO ] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 464 ms
+2026-03-31 11:23:36 [INFO ] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-31 11:23:36 [INFO ] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-31 11:23:36 [INFO ] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 11:23:36 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-31 11:23:36 [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3dbbed3e
+2026-03-31 11:23:36 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-31 11:23:36 [INFO ] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/user_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: user_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 11:23:36 [INFO ] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 11:23:36 [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 11:23:36 [INFO ] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-31 11:23:36 [WARN ] i.n.r.d.DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2026-03-31 11:23:37 [WARN ] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 11:23:37 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-31 11:23:37 [INFO ] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-31 11:23:37 [INFO ] c.e.R.RedisImplimentationApplication - Started RedisImplimentationApplication in 1.61 seconds (process running for 1.907)
+2026-03-31 11:23:50 [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 11:23:50 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 11:23:50 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-03-31 11:23:50 [INFO ] c.e.R.controllers.UserController - GET request received for all users
+2026-03-31 11:23:50 [INFO ] c.e.R.services.UserService - Fetching all users from database
+2026-03-31 11:23:50 [DEBUG] c.e.R.services.UserService - Retrieved 20 users
+2026-03-31 11:23:50 [DEBUG] c.e.R.controllers.UserController - Retrieved 20 users
+2026-03-31 11:28:26 [INFO ] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 11:28:26 [INFO ] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 11:28:26 [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 11:28:26 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-31 11:28:26 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-31 11:28:32 [INFO ] c.e.R.RedisImplimentationApplication - Starting RedisImplimentationApplication using Java 24.0.2 with PID 1097 (/Users/zop/Downloads/RedisImplimentation/target/classes started by zop in /Users/zop/Downloads/RedisImplimentation)
+2026-03-31 11:28:32 [DEBUG] c.e.R.RedisImplimentationApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-03-31 11:28:32 [INFO ] c.e.R.RedisImplimentationApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 11:28:32 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 11:28:32 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 11:28:32 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2026-03-31 11:28:32 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 11:28:32 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 11:28:32 [INFO ] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.RedisImplimentation.repositories.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 11:28:32 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-03-31 11:28:32 [INFO ] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 11:28:32 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-31 11:28:32 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 11:28:32 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-03-31 11:28:32 [INFO ] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 467 ms
+2026-03-31 11:28:32 [INFO ] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-31 11:28:32 [INFO ] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-31 11:28:32 [INFO ] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 11:28:32 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-31 11:28:32 [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bff764c
+2026-03-31 11:28:32 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-31 11:28:32 [INFO ] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/user_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: user_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 11:28:33 [INFO ] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 11:28:33 [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 11:28:33 [INFO ] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-31 11:28:33 [WARN ] i.n.r.d.DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2026-03-31 11:28:33 [WARN ] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 11:28:33 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-31 11:28:33 [INFO ] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-31 11:28:33 [INFO ] c.e.R.RedisImplimentationApplication - Started RedisImplimentationApplication in 1.562 seconds (process running for 1.799)
+2026-03-31 11:31:43 [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 11:31:43 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 11:31:43 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-31 11:31:43 [INFO ] c.e.R.controllers.UserController - GET request received for user id: 1
+2026-03-31 11:31:43 [INFO ] c.e.R.services.UserService - Cache MISS 
+2026-03-31 11:31:43 [INFO ] c.e.R.services.UserService - User cached in REDIS
+2026-03-31 11:31:43 [INFO ] c.e.R.controllers.UserController - User id: 1 returned to client
+2026-03-31 11:33:14 [INFO ] c.e.R.controllers.UserController - GET request received for user id: 1
+2026-03-31 11:33:14 [INFO ] c.e.R.services.UserService - Cache MISS 
+2026-03-31 11:33:14 [INFO ] c.e.R.services.UserService - User cached in REDIS
+2026-03-31 11:33:14 [INFO ] c.e.R.controllers.UserController - User id: 1 returned to client
+2026-03-31 11:33:29 [INFO ] c.e.R.controllers.UserController - GET request received for user id: 1
+2026-03-31 11:33:29 [INFO ] c.e.R.services.UserService - Cache HIT 
+2026-03-31 11:33:29 [INFO ] c.e.R.controllers.UserController - User id: 1 returned to client
+2026-03-31 11:33:36 [INFO ] c.e.R.controllers.UserController - GET request received for user id: 1
+2026-03-31 11:33:36 [INFO ] c.e.R.services.UserService - Cache HIT 
+2026-03-31 11:33:36 [INFO ] c.e.R.controllers.UserController - User id: 1 returned to client
+2026-03-31 13:26:07 [WARN ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m3s218ms).
+2026-03-31 13:43:45 [WARN ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m38s137ms).
+2026-03-31 15:27:57 [INFO ] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 15:27:57 [INFO ] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 15:27:57 [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 15:27:57 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-31 15:27:57 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-31 15:29:30 [INFO ] c.e.R.RedisImplimentationApplication - Starting RedisImplimentationApplication using Java 24.0.2 with PID 2708 (/Users/zop/Downloads/RedisImplimentation/target/classes started by zop in /Users/zop/Downloads/RedisImplimentation)
+2026-03-31 15:29:30 [DEBUG] c.e.R.RedisImplimentationApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-03-31 15:29:30 [INFO ] c.e.R.RedisImplimentationApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 15:29:30 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 15:29:30 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 15:29:30 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2026-03-31 15:29:30 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-31 15:29:30 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-31 15:29:30 [INFO ] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.RedisImplimentation.repositories.UserRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-31 15:29:30 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-03-31 15:29:31 [INFO ] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-31 15:29:31 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-31 15:29:31 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 15:29:31 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-03-31 15:29:31 [INFO ] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 467 ms
+2026-03-31 15:29:31 [INFO ] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-31 15:29:31 [INFO ] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-31 15:29:31 [INFO ] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 15:29:31 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-31 15:29:31 [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49153009
+2026-03-31 15:29:31 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-31 15:29:31 [INFO ] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/user_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: user_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 15:29:31 [INFO ] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 15:29:31 [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 15:29:31 [INFO ] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-31 15:29:31 [WARN ] i.n.r.d.DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2026-03-31 15:29:31 [WARN ] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 15:29:32 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-31 15:29:32 [INFO ] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-31 15:29:32 [INFO ] c.e.R.RedisImplimentationApplication - Started RedisImplimentationApplication in 1.524 seconds (process running for 1.763)
+2026-03-31 15:29:45 [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 15:29:45 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 15:29:45 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-03-31 15:29:45 [INFO ] c.e.R.controllers.UserController - GET request received for user id: 1
+2026-03-31 15:29:45 [INFO ] c.e.R.services.UserService - Cache MISS 
+2026-03-31 15:29:45 [INFO ] c.e.R.services.UserService - User cached in REDIS
+2026-03-31 15:29:45 [INFO ] c.e.R.controllers.UserController - User id: 1 returned to client
+2026-03-31 15:30:16 [INFO ] c.e.R.controllers.UserController - GET request received for all users
+2026-03-31 15:30:16 [INFO ] c.e.R.services.UserService - Fetching all users from database
+2026-03-31 15:30:16 [DEBUG] c.e.R.services.UserService - Retrieved 20 users
+2026-03-31 15:30:16 [DEBUG] c.e.R.controllers.UserController - Retrieved 20 users
+2026-03-31 16:09:46 [INFO ] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 16:09:46 [INFO ] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 16:09:46 [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 16:09:46 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-31 16:09:46 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
